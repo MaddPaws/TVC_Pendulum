@@ -1,32 +1,10 @@
-/*
- * File: ert_main.c
- *
- * Code generated for Simulink model 'controller'.
- *
- * Model version                  : 1.1
- * Simulink Coder version         : 24.1 (R2024a) 19-Nov-2023
- * C/C++ source code generated on : Wed Oct 29 00:56:01 2025
- *
- * Target selection: ert.tlc
- * Embedded hardware selection: STMicroelectronics->ST10/Super10
- * Code generation objectives: Unspecified
- * Validation result: Not run
- */
+
 
 #include <stddef.h>
-#include <stdio.h>            /* This example main program uses printf/fflush */
+#include <stdio.h>            
 #include "controller.h"                /* Model header file */
 
-/*
- * Associating rt_OneStep with a real-time clock or interrupt service routine
- * is what makes the generated code "real-time".  The function rt_OneStep is
- * always associated with the base rate of the model.  Subrates are managed
- * by the base rate from inside the generated code.  Enabling/disabling
- * interrupts and floating point context switches are target specific.  This
- * example code indicates where these should take place relative to executing
- * the generated code step function.  Overrun behavior should be tailored to
- * your application needs.  This example simply sets an error status in the
- * real-time model and returns from rt_OneStep.
+
  */
 void rt_OneStep(void);
 void rt_OneStep(void)
